@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.container section {
+  min-height: 100vh;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.center {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  position: fixed;
+  color: black;
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0 20px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  height: 120px;
+  width: 100vw;
+
+  background: linear-gradient(
+          90deg,
+          rgba(255, 195, 205, 1) 0%,
+          rgba(255, 195, 205, 1) 38%,
+          rgba(239, 83, 96, 1) 56%,
+          rgba(239, 83, 96, 1) 100%
+  );
+  background-size: 150% 100%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+header .title {
+  font-size: 30px;
+}
+
+header .title:hover {
+  transform: rotateY(180deg);
+}
+
+header .subtitle {
+  font-size: 15px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+
+  background-color: gray;
+}
+
+.article {
+  font-size: 18px;
+  background-color: rgb(70, 70, 70);
+  padding: 10px;
+}
+
+.article .content {
+  float: left;
+}
+
+.article .image-container {
+  float: left;
+  margin-left: 50px;
+}
+
+img {
+  width: 200px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px 0 20px;
+  background-color: rgb(20, 20, 20);
+}
+
+.container a {
+  color: red;
+}
+
+a:hover, a:visited:hover {
+  color: rgb(34, 255, 163);
+}
+
+a:visited {
+  color: rgb(255, 195, 205);
+  text-decoration: underline black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex div {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+  margin: 10px;
+}
+
+.flex div:first-child {
+  background: linear-gradient(-45deg, #81ff0c, #06eeff, #ff0000, #d8db1f);
+  background-size: 400% 400%;
+}
+
+.flex div:last-child {
+  background: linear-gradient(-45deg, #d329e2, #1cff07, #9ffa55, #db1f86);
+  background-size: 400% 400%;
+}
+
+.destruction-button {
+  width: 500px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ff0000;
+  color: white;
+  line-height: 500px;
+  margin-top: 30px;
+  border-radius: 40px;
+  border: 3px solid white;
+  box-shadow: 7px 7px 15px 5px black;
+  cursor: pointer;
+}
+
+.destruction-button:hover {
+  background-color: #001dc2;
+  border: 3px solid red;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
